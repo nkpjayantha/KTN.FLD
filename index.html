@@ -18,14 +18,7 @@
             color: #333;
         }
 
-        /* ශීර්ෂය සහ බැනරය (Header & Banner) */
-        header {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 20px 10px;
-        }
-
+        /* බැනරය (Banner) */
         .banner-container {
             width: 100%;
             max-width: 1200px;
@@ -33,7 +26,7 @@
         }
 
         /* පරිගණක තිර සඳහා බැනර් ස්ටයිල් */
-        .banner-img, .feature-img {
+        .banner-img {
             width: 100%;
             height: 300px;
             object-fit: cover; /* රූපය ඇදීමකින් තොරව කොටුවට ගැලපේ */
@@ -200,12 +193,11 @@
            ========================================= */
         @media screen and (max-width: 768px) {
             /* Phone එකේදී බැනර් එක සම්පූර්ණයෙන් පෙන්වීම */
-            .banner-img, .feature-img {
+            .banner-img {
                 height: auto !important;
                 max-height: none !important;
                 /* contain මගින් රූපය කැපීම (crop වීම) වළක්වයි */
                 object-fit: contain;
-                /* අවශ්‍ය නම් රූපයට background color එකක් ලබා දිය හැක */
                 background-color: #e9ecef; 
             }
             
@@ -226,12 +218,6 @@
     </style>
 </head>
 <body>
-
-    <!-- ශීර්ෂය -->
-    <header>
-        <h1>කටාන ප්‍රාදේශීය ලේකම් කාර්යාලය</h1>
-        <p>ක්ෂේත්‍ර නිලධාරී අංශය</p>
-    </header>
 
     <!-- ප්‍රධාන බැනර් රූපය (Banner Image) -->
     <div class="banner-container">
@@ -312,14 +298,9 @@
 
     </div>
 
-    <!-- පහළ ඇති දෙවන බැනර් රූපය (Second Banner Image) -->
-    <div class="banner-container">
-        <img src="banner.jpg" alt="විශේෂ තොරතුරු බැනරය" class="feature-img">
-    </div>
-
     <!-- පාදම -->
     <footer>
-        <p>&copy; 2026 කටාන ප්‍රාදේශීය ලේකම් කාර්යාලය - සියලුම හිමිකම් ඇවිරිණි.</p>
+        <p>&copy; ක්ෂේත්‍ර අංශය, කටාන ප්‍රාදේශීය ලේකම් කාර්යාලය - සියලුම හිමිකම් ඇවිරිණි.</p>
     </footer>
 
     <!-- JavaScript (Tabs ක්‍රියාත්මක කිරීම සඳහා) -->
