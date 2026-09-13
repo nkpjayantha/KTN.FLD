@@ -99,32 +99,6 @@
             padding-bottom: 10px;
         }
 
-        /* නිලධාරීන්ගේ ඉහළ විශාල බටන් එක (Featured Main Button) */
-        .main-info-btn-container {
-            text-align: center;
-            margin: 15px 0 25px 0;
-        }
-
-        .main-info-btn {
-            display: inline-block;
-            width: 100%;
-            max-width: 800px;
-            background-color: #e65100;
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-            padding: 18px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            box-shadow: 0 4px 10px rgba(230, 81, 0, 0.3);
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        .main-info-btn:hover {
-            background-color: #bf360c;
-            transform: translateY(-2px);
-        }
-
         /* සේවා ලින්ක් ජාලය (Services Grid - 20 Links) */
         .services-grid {
             display: grid;
@@ -139,9 +113,6 @@
             border-radius: 8px;
             padding: 15px;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
@@ -150,34 +121,28 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        /* බටන් වල ස්ටයිල් */
+        .service-card h3 {
+            font-size: 16px;
+            color: #003366;
+            margin-bottom: 12px;
+        }
+
         .service-card a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-            min-height: 60px;
+            display: inline-block;
             text-decoration: none;
+            background-color: #28a745;
             color: white;
-            padding: 12px 15px;
-            border-radius: 6px;
-            font-size: 15px;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
             font-weight: bold;
-            line-height: 1.4;
             transition: background 0.2s;
         }
 
-        /* මහජන සේවා බටන් පාට (කොළ පැහැය) */
-        .public-card a {
-            background-color: #28a745;
-        }
-
-        .public-card a:hover {
+        .service-card a:hover {
             background-color: #218838;
         }
 
-        /* නිලධාරී සේවා බටන් පාට (නිල් පැහැය) */
         .officer-card a {
             background-color: #007bff;
         }
@@ -220,65 +185,60 @@
         <!-- 1. බාහිර පුද්ගලයින්ගේ පිවිසුම (Public View) -->
         <div id="public-tab" class="tab-content active">
             <h2>මහජන සේවාවන් සහ Google Drive අයදුම්පත්</h2>
-            <p style="text-align: center; margin-bottom: 15px;">අදාළ සේවාව ලබාගැනීමට හෝ අයදුම්පත් බාගත කිරීමට පහත බටන් එක මත ක්ලික් කරන්න.</p>
+            <p style="text-align: center;">ඔබට අවශ්‍ය සේවාවට අදාළ අයදුම්පත් ලබාගැනීමට පහත ලින්ක් භාවිත කරන්න.</p>
             
             <div class="services-grid">
-                <!-- බටන් 20 ක් (තනතුර සහ සේවාව බටන් එක ඇතුලත) -->
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">1. ග්‍රාම නිලධාරී සේවා & අයදුම්පත්</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">2. සමෘද්ධි සංවර්ධන නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">3. සංවර්ධන නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">4. කෘෂිකර්ම පර්යේෂණ නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">5. ආර්ථික සංවර්ධන නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">6. ඉඩම් නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">7. සමාජසේවා නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">8. ළමා ආරක්ෂක නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">9. සංස්කෘතික නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">10. ක්‍රීඩා නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">11. තරුණ සේවා නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">12. විදේශ නියුක්ති නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">13. ආපදා කළමනාකරණ නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">14. පරිසර නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">15. වැඩිහිටි හිමිකම් නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">16. උපදේශන නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">17. කුඩා ව්‍යවසාය සංවර්ධන සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">18. සංඛ්‍යාලේඛන නිලධාරී සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">19. නිෂ්පාදන පාරිසරික සේවා</a></div>
-                <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">20. විශේෂ අවශ්‍යතා සේවා</a></div>
+                <!-- ලින්ක් 20 ක් (Google Drive Links) -->
+                <div class="service-card"><h3>1. ග්‍රාම නිලධාරී සේවා & අයදුම්පත්</h3><a href="services.html">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>2. සමෘද්ධි සංවර්ධන නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>3. සංවර්ධන නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>4. කෘෂිකර්ම පර්යේෂණ නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>5. ආර්ථික සංවර්ධන නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>6. ඉඩම් නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>7. සමාජසේවා නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>8. ළමා ආරක්ෂක නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>9. සංස්කෘතික නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>10. ක්‍රීඩා නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>11. තරුණ සේවා නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>12. විදේශ නියුක්ති නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>13. ආපදා කළමනාකරණ නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>14. පරිසර නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>15. වැඩිහිටි හිමිකම් නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>16. උපදේශන නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>17. කුඩා ව්‍යවසාය සංවර්ධන සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>18. සංඛ්‍යාලේඛන නිලධාරී සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>19. නිෂ්පාදන පාරිසරික සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
+                <div class="service-card"><h3>20. විශේෂ අවශ්‍යතා සේවා</h3><a href="https://drive.google.com" target="_blank">අයදුම්පත් භාගත කරන්න (Drive)</a></div>
             </div>
         </div>
 
         <!-- 2. නිලධාරීන්ගේ පිවිසුම (Officer Portal View) -->
         <div id="officer-tab" class="tab-content">
             <h2>නිලධාරී අභ්‍යන්තර පිවිසුම (ඩිජිටල් ගොනු)</h2>
-            <p style="text-align: center; color: red; margin-bottom: 10px;">* මෙම කොටස බලප්‍රේත නිලධාරීන් සඳහා පමණි (Restricted Access)</p>
+            <p style="text-align: center; color: red;">* මෙම කොටස බලප්‍රේත නිලධාරීන් සඳහා පමණි (Google Drive Restricted Access)</p>
             
-            <!-- ඉහළින්ම ඇතුළත් කළ විශාල ප්‍රධාන බටන් එක -->
-            <div class="main-info-btn-container">
-                <a href="https://drive.google.com" target="_blank" class="main-info-btn">📌 ක්ෂේත්‍ර නිලධාරීන්ට අවශ්‍ය තොරතුරු</a>
-            </div>
-
             <div class="services-grid">
-                <!-- නිලධාරීන්ගේ ඩිජිටල් ගොනු බටන් 20 (තනතුර බටන් එක ඇතුලත) -->
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">ග්‍රාම නිලධාරී - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">සමෘද්ධි නිලධාරී - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">සංවර්ධන නිලධාරී - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">කෘෂිකර්ම නිලධාරී - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">ආර්ථික සංවර්ධන - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">ඉඩම් නිලධාරී - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">සමාජසේවා නිලධාරී - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">ළමා ආරක්ෂක - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">සංස්කෘතික නිලධාරී - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">ක්‍රීඩා නිලධාරී - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">තරුණ සේවා - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">විදේශ නියුක්ති - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">ආපදා කළමනාකරණ - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">පරිසර නිලධාරී - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">වැඩිහිටි හිමිකම් - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">උපදේශන නිලධාරී - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">කුඩා ව්‍යවසාය - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">සංඛ්‍යාලේඛන - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">පාරිසරික - ඩිජිටල් ගොනුව</a></div>
-                <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">විශේෂ කාර්ය - ඩිජිටල් ගොනුව</a></div>
+                <!-- නිලධාරීන්ගේ ඩිජිටල් ගොනු සඳහා ලින්ක් 20 -->
+                <div class="service-card officer-card"><h3>ග්‍රාම නිලධාරී - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>සමෘද්ධි නිලධාරී - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>සංවර්ධන නිලධාරී - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>කෘෂිකර්ම නිලධාරී - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>ආර්ථික සංවර්ධන - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>ඉඩම් නිලධාරී - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>සමාජසේවා නිලධාරී - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>ළමා ආරක්ෂක - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>සංස්කෘතික නිලධාරී - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>ක්‍රීඩා නිලධාරී - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>තරුණ සේවා - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>විදේශ නියුක්ති - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>ආපදා කළමනාකරණ - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>පරිසර නිලධාරී - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>වැඩිහිටි හිමිකම් - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>උපදේශන නිලධාරී - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>කුඩා ව්‍යවසාය - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>සංඛ්‍යාලේඛන - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>පාරිසරික - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
+                <div class="service-card officer-card"><h3>විශේෂ කාර්ය - ඩිජිටල් ගොනුව</h3><a href="https://drive.google.com" target="_blank">ගොනුවට පිවිසෙන්න</a></div>
             </div>
         </div>
 
