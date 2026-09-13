@@ -32,10 +32,11 @@
             margin: 10px auto;
         }
 
+        /* පරිගණක තිර සඳහා බැනර් ස්ටයිල් */
         .banner-img, .feature-img {
             width: 100%;
             height: 300px;
-            object-fit: cover;
+            object-fit: cover; /* රූපය ඇදීමකින් තොරව කොටුවට ගැලපේ */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
@@ -125,7 +126,7 @@
             transform: translateY(-2px);
         }
 
-        /* සේවා ලින්ක් ජාලය (Services Grid - 20 Links) */
+        /* සේවා ලින්ක් ජාලය (Services Grid) */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -168,7 +169,6 @@
             transition: background 0.2s;
         }
 
-        /* මහජන සේවා බටන් පාට (කොළ පැහැය) */
         .public-card a {
             background-color: #28a745;
         }
@@ -177,7 +177,6 @@
             background-color: #218838;
         }
 
-        /* නිලධාරී සේවා බටන් පාට (නිල් පැහැය) */
         .officer-card a {
             background-color: #007bff;
         }
@@ -195,17 +194,33 @@
             margin-top: 30px;
         }
 
-        /* ජංගම දුරකථන සඳහා Responsive Adjustments */
+        /* =========================================
+           ජංගම දුරකථන සඳහා විශේෂිත සැකසුම්
+           (Mobile Responsive Adjustments) 
+           ========================================= */
         @media screen and (max-width: 768px) {
+            /* Phone එකේදී බැනර් එක සම්පූර්ණයෙන් පෙන්වීම */
             .banner-img, .feature-img {
-                height: auto;
-                min-height: 150px;
-                max-height: 200px;
+                height: auto !important;
+                max-height: none !important;
+                /* contain මගින් රූපය කැපීම (crop වීම) වළක්වයි */
+                object-fit: contain;
+                /* අවශ්‍ය නම් රූපයට background color එකක් ලබා දිය හැක */
+                background-color: #e9ecef; 
             }
             
+            .tab-container {
+                flex-direction: row;
+            }
+
             .tab-btn {
                 font-size: 14px;
-                padding: 10px 15px;
+                padding: 12px 5px;
+            }
+            
+            .main-info-btn {
+                font-size: 16px;
+                padding: 15px;
             }
         }
     </style>
@@ -237,7 +252,7 @@
             <p style="text-align: center; margin-bottom: 15px;">අදාළ සේවාව ලබාගැනීමට හෝ අයදුම්පත් බාගත කිරීමට පහත බටන් එක මත ක්ලික් කරන්න.</p>
             
             <div class="services-grid">
-                <!-- බටන් 20 ක් (තනතුර සහ සේවාව බටන් එක ඇතුලත) -->
+                <!-- බටන් 20 ක් -->
                 <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">1. ග්‍රාම නිලධාරී සේවා & අයදුම්පත්</a></div>
                 <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">2. සමෘද්ධි සංවර්ධන නිලධාරී සේවා</a></div>
                 <div class="service-card public-card"><a href="https://drive.google.com" target="_blank">3. සංවර්ධන නිලධාරී සේවා</a></div>
@@ -266,13 +281,12 @@
             <h2>නිලධාරී අභ්‍යන්තර පිවිසුම (ඩිජිටල් ගොනු)</h2>
             <p style="text-align: center; color: red; margin-bottom: 10px;">* මෙම කොටස බලයලත් නිලධාරීන් සඳහා පමණි (Restricted Access)</p>
             
-            <!-- ඉහළින්ම ඇතුළත් කළ විශාල ප්‍රධාන බටන් එක -->
             <div class="main-info-btn-container">
                 <a href="https://drive.google.com" target="_blank" class="main-info-btn">📌 ක්ෂේත්‍ර නිලධාරීන්ට අවශ්‍ය තොරතුරු</a>
             </div>
 
             <div class="services-grid">
-                <!-- නිලධාරීන්ගේ ඩිජිටල් ගොනු බටන් 20 (තනතුර බටන් එක ඇතුලත) -->
+                <!-- නිලධාරීන්ගේ ඩිජිටල් ගොනු බටන් 20 -->
                 <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">ග්‍රාම නිලධාරී - ඩිජිටල් ගොනුව</a></div>
                 <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">සමෘද්ධි නිලධාරී - ඩිජිටල් ගොනුව</a></div>
                 <div class="service-card officer-card"><a href="https://drive.google.com" target="_blank">සංවර්ධන නිලධාරී - ඩිජිටල් ගොනුව</a></div>
