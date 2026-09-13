@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>සංස්කෘතික නිලධාරී සේවා පියස - ප්‍රාදේශීය ලේකම් කාර්යාලය</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #800000; /* Marron/Traditional Sri Lankan Red */
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 5px solid #ffcc00;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Profile & Contact Section */
+        .officer-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .officer-card h2 {
+            color: #800000;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background: #fdf8f8;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border-left: 4px solid #800000;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: #800000;
+            margin-right: 15px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .contact-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            color: #800000;
+        }
+
+        /* Services Section */
+        .services-section h2 {
+            color: #800000;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .service-card h3 {
+            color: #b30000;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        /* Buttons & Links */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-info {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-info:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-download {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .btn-download:hover {
+            background-color: #1e7e34;
+        }
+
+        .btn i {
+            margin-right: 8px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>සංස්කෘතික කටයුතු අංශය</h1>
+        <p>ප්‍රාදේශීය ලේකම් කාර්යාලය - [ඔබගේ ප්‍රාදේශීය ලේකම් කාර්යාලයේ නම]</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Officer Info Section -->
+        <section class="officer-card">
+            <h2><i class="fa-solid fa-user-tie"></i> නිලධාරී තොරතුරු</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fa-solid fa-user"></i>
+                    <div>
+                        <small>සංස්කෘතික නිලධාරී</small><br>
+                        <strong>[නිලධාරියාගේ නම මෙතැනට]</strong>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <small>දුරකථන අංකය</small><br>
+                        <a href="tel:0712345678">071 234 5678</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <small>WhatsApp අංකය</small><br>
+                        <a href="https://wa.me/94712345678" target="_blank">071 234 5678</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <small>විද්‍යුත් තැපෑල (Email)</small><br>
+                        <a href="mailto:cultural@example.gov.lk">cultural@example.gov.lk</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <h2><i class="fa-solid fa-list-check"></i> මහජන සේවාවන්</h2>
+
+            <!-- Service 1 -->
+            <div class="service-card">
+                <h3>1. කලාකරුවන් ලියාපදිංචි කිරීම සහ හැඳුනුම්පත් නිකුත් කිරීම</h3>
+                <p>ප්‍රාදේශීය ලේකම් කොට්ඨාස බලප්‍රදේශය තුළ වෙසෙන සියලුම ක්ෂේත්‍රයන්ගේ ප්‍රසාංගික සහ සෘජු කලාකරුවන් සංස්කෘතික කටයුතු දෙපාර්තමේන්තුවේ ලියාපදිංචි කිරීම.</p>
+                <div class="btn-group">
+                    <!-- Google Drive Link for Info -->
+                    <a href="https://drive.google.com/your-info-link-1" target="_blank" class="btn btn-info">
+                        <i class="fa-solid fa-circle-info"></i> විස්තර පත්‍රිකාව
+                    </a>
+                    <!-- Google Drive Link for Application -->
+                    <a href="https://drive.google.com/your-application-link-1" target="_blank" class="btn btn-download">
+                        <i class="fa-solid fa-file-arrow-down"></i> අයදුම්පත බාගත කරන්න
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <h3>2. සංස්කෘතික සංවිධාන / කලා සංගම් ලියාපදිංචි කිරීම</h3>
+                <p>ප්‍රදේශයේ සංස්කෘතික හා නාට්‍ය සංගම්, කලා පද්‍ය සමාජ සහ ප්‍රසාංගික කලා කණ්ඩායම් රාජ්‍ය මට්ටමින් ලියාපදිංචි කිරීම සහ උපදෙස් ලබාදීම.</p>
+                <div class="btn-group">
+                    <a href="https://drive.google.com/your-info-link-2" target="_blank" class="btn btn-info">
+                        <i class="fa-solid fa-circle-info"></i> විස්තර පත්‍රිකාව
+                    </a>
+                    <a href="https://drive.google.com/your-application-link-2" target="_blank" class="btn btn-download">
+                        <i class="fa-solid fa-file-arrow-down"></i> අයදුම්පත බාගත කරන්න
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <h3>3. කලාකරුවන් සඳහා වන මූල්‍ය සහනාධාර සහ ඇගයීම්</h3>
+                <p>වයෝවෘද්ධ කලාකරුවන් සඳහා විශ්‍රාම වැටුප්/ආධාර ලබාදීම සහ රාජ්‍ය මට්ටමේ ඇගයීම් සඳහා නිර්දේශ ඉදිරිපත් කිරීම.</p>
+                <div class="btn-group">
+                    <a href="https://drive.google.com/your-info-link-3" target="_blank" class="btn btn-info">
+                        <i class="fa-solid fa-circle-info"></i> විස්තර පත්‍රිකාව
+                    </a>
+                    <a href="https://drive.google.com/your-application-link-3" target="_blank" class="btn btn-download">
+                        <i class="fa-solid fa-file-arrow-down"></i> අයදුම්පත බාගත කරන්න
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <h3>4. ප්‍රාදේශීය කලා උළෙල සහ ප්‍රදර්ශන සංවිධානය</h3>
+                <p>වාර්ෂික සංස්කෘතික උත්සව, සාහිත්‍ය තරඟ සහ කලා නිර්මාණ ප්‍රදර්ශන සඳහා අයදුම්පත් කැඳවීම.</p>
+                <div class="btn-group">
+                    <a href="https://drive.google.com/your-info-link-4" target="_blank" class="btn btn-info">
+                        <i class="fa-solid fa-circle-info"></i> විස්තර පත්‍රිකාව
+                    </a>
+                    <a href="https://drive.google.com/your-application-link-4" target="_blank" class="btn btn-download">
+                        <i class="fa-solid fa-file-arrow-down"></i> අයදුම්පත බාගත කරන්න
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 සංස්කෘතික අංශය - ප්‍රාදේශීය ලේකම් කාර්යාලය. සියලුම හිමිකම් ඇවිරිණි.</p>
+    </footer>
+
+</body>
+</html>
